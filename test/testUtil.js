@@ -1,11 +1,10 @@
 "use strict";
 
 const boxedImmutable = require("boxed-immutable");
-const _$ = boxedImmutable._$;
+const _$ = boxedImmutable.box;
 const createBox = boxedImmutable.createBox;
-const Boxed = boxedImmutable.boxed.Box;
-const BOXED_GET_THIS = boxedImmutable.boxed.BOXED_GET_THIS;
-const boxState = boxedImmutable.boxed.boxState;
+const Boxed = boxedImmutable.Box;
+const BOXED_GET_THIS = boxedImmutable.BOXED_GET_THIS;
 const utilTypeFuncs = require('util-type-funcs');
 const isObjectLike = utilTypeFuncs.isObjectLike;
 const isArray = utilTypeFuncs.isArray;

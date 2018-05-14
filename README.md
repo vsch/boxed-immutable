@@ -2,10 +2,18 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
+:warning: Version 0.8.0 factored out boxed state implementation to its own module
+[`boxed-state`](https://github.com/vsch/boxed-state/blob/master/README.md) with all exports not
+implemented by `boxed-immutable` removed. All previous references need to be changed to specific
+module name for the implementation.
+
 :warning: Version 0.7.0 factored out implementation into separate modules and removed exports
 for all except: `boxed-out` module implementing `boxOut` function. The rest need to be imported
-from their corresponding modules: `util-string-wrap`, `util-type-funcs`, `for-each-break` or
-`obj-each-break`.
+from their corresponding modules:
+[`util-string-wrap`](https://github.com/vsch/util-string-wrap/blob/master/README.md),
+[`util-type-funcs`](https://github.com/vsch/util-type-funcs/blob/master/README.md),
+[`for-each-break`](https://github.com/vsch/for-each-break/blob/master/README.md) or
+[`obj-each-break`](https://github.com/vsch/obj-each-break/blob/master/README.md).
 
 The API is evolving and will still change as its idiosyncrasies and limitations are discovered
 in use. The **boxed-in** proxy is fairly stable but may add new magic properties and eventually

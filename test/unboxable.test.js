@@ -2,13 +2,13 @@
 
 const jestEach = require('jest-each');
 const boxedImmutable = require("boxed-immutable");
+const boxOut = require("boxed-out");
 const utilTypeFuncs = require('util-type-funcs');
 const objEachBreak = require('obj-each-break');
 const testUtil = require('./testUtil');
-const _$ = boxedImmutable._$;
-const boxOut = boxedImmutable.boxOut;
-const $_ = boxedImmutable.boxOut;
-const boxState = boxedImmutable.boxState;
+
+const _$ = boxedImmutable.box;
+const $_ = boxOut;
 
 const isObjectLike = utilTypeFuncs.isObjectLike;
 const isNullOrUndefined = utilTypeFuncs.isNullOrUndefined;
@@ -25,9 +25,9 @@ const BREAK = objEachBreak.BREAK;
 const cloneArrayObject = objEachBreak.cloneArrayObject;
 const hasOwnProperties = objEachBreak.hasOwnProperties;
 
-const isBoxedProxy = boxedImmutable.boxed.isBoxedProxy;
-const isBoxedInProxy = boxedImmutable.boxed.isBoxedInProxy;
-const isBoxedOutProxy = boxedImmutable.boxed.isBoxedOutProxy;
+const isBoxedProxy = boxedImmutable.isBoxedProxy;
+const isBoxedInProxy = boxedImmutable.isBoxedInProxy;
+const isBoxedOutProxy = boxedImmutable.isBoxedOutProxy;
 const createTransformedBoxed = testUtil.createTransformedBoxed;
 const generateTestParams = testUtil.generateTestParams;
 const paramStringException = testUtil.paramStringException;
