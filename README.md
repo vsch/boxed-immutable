@@ -1,6 +1,6 @@
 # boxed-immutable
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![experimental](https://badges.github.io/stability-badges/dist/experimental.svg)](https://github.com/badges/stability-badges)
 
 :warning: Version 0.8.0 factored out boxed state implementation to its own module
 [`boxed-state`](https://github.com/vsch/boxed-state/blob/master/README.md) with all exports not
@@ -131,7 +131,7 @@ The rest of this file was moved to the wiki for greater leg room, [boxed-immutab
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/vsch/boxed-immutable/blob/master/LICENSE.md) for
+MIT, see [LICENSE.md](https://github.com/vsch/boxed-immutable/blob/master/LICENSE.md) for
 details.
 
 [React]: https://reactjs.org
