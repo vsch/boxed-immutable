@@ -2,6 +2,7 @@
 
 [TOC]: # " "
 
+- [0.8.4](#084)
 - [0.8.2](#082)
 - [0.8.0](#080)
 - [0.7.2](#072)
@@ -31,6 +32,10 @@
 - [0.1.0](#010)
 
 
+## 0.8.4
+
+* Fix: update dependencies
+
 ## 0.8.2
 
 * Fix: update dependencies
@@ -50,7 +55,7 @@
       const boxedImmutable = require('boxed-immutable');
       const createBox = boxedImmutable.createBox;
       const defaultCanBox = boxedImmutable.defaultCanBox;
-      
+
       const _$ = createBox({
         canBox(value, prop, collection) {
             return value instanceof YourType || defaultCanBox(value);
